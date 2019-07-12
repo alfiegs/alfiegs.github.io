@@ -300,3 +300,5 @@ google.maps.event.addDomListener(window, 'load', initializeMap);
 google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenterWithOffset(myLangLat, 0, -55);
 });
+
+

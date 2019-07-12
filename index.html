@@ -20,13 +20,17 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+	<!-- Load Devicons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
 </head>
 <body>
 	<div class="jumbotron home home-fullscreen" id="home">
 		<div class="mask"></div>
-		<a href="#" class="logo">
+		<!-- <a href="#" class="logo">
 			<img src="img/logo.png" alt="Moderno - Theme by GraphBerry.com">
-		</a>
+		</a> -->
 		<a href="" class="menu-toggle" id="nav-expander"><i class="fa fa-bars"></i></a>
 		<!-- Offsite navigation -->
 		<nav class="menu">
@@ -54,7 +58,11 @@
 				<p>Full stack web and app developer,<br> and person who does many other wonderful things.
 				</p>
 				<br>
-				<a href="#test" class="btn btn-primary" data-nav-section="servs">Get in Touch</a>
+				<a data-scroll href="#portfolio" class="btn btn-primary" data-nav-section="servs">Projects</a>
+				<br>
+				<br>
+				<br>
+				<img id="photo-of-me" src="img/me2.jpg" alt="Moderno - Theme by GraphBerry.com">
 			</div>
 		</div>
 	</div>
@@ -124,35 +132,101 @@
 	<!-- Services section start -->
 	<section id="services" id="test">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="service-item">
-						<div class="icon"><i class="fa fa-diamond"></i></div>
-						<h3>We Are Creative</h3>
+				<header>
+						<h2>Technologies</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor.
+						</p>
+					</header>
+			<div class="row text-center skills-title">
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="service-item">
+						<div class="icon">
+							<i class="devicon-javascript-plain colored"></i>
+						</div>
+						<!-- <h3>JavaScript</h3> -->
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco.
-						</p>
+						</p> -->
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<div class="service-item">
-						<div class="icon"><i class="fa fa-gear"></i></div>
-						<h3>We Have Skills</h3>
+						<div class="icon"><i class="devicon-html5-plain-wordmark colored"></i>
+						</i></div>
+						<!-- <h3>We Have Skills</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua.
-						</p>
+						</p> -->
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<div class="service-item">
-						<div class="icon"><i class="fa fa-life-ring"></i></div>
-						<h3>We Love To Help</h3>
+						<div class="icon"><i class="devicon-css3-plain-wordmark colored"></i>
+						</i></div>
+						<!-- <h3>We Love To Help</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.
-						</p>
+						</p> -->
 					</div>
 				</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-react-original-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-python-plain-wordmark colored"></i>							</i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-jquery-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-express-original-wordmark colored"></i>
+						</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-bootstrap-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-nodejs-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-mysql-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-sequelize-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2">
+						<div class="service-item">
+							<div class="icon"><i class="devicon-postgresql-plain-wordmark colored"></i>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 	</section>
@@ -174,7 +248,7 @@
 					<span>We Are Here</span>
 				</div>
 			</div> -->
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-8">
 					<form class="row" action="mailto:joeblough10@yahoo.com" method="post">
 						<div class="form-group col-md-6">
@@ -193,22 +267,29 @@
 							<button class="btn btn-lg btn-primary">Send</button>
 						</div>
 					</form>
-				</div>
-				<div class="col-md-3 col-md-offset-1">
-					<address>
-						<span>Location</span>
-						<p>
-							Houston, Texas
-						</p>
-					</address>
-					<address>
-						<span>Email</span>
-						<p>alfie.g.santos@gmail.com</p>
-					</address>
-					<address>
-						<span>Phone</span>
-						<p>(713) 416-9744</p>
-					</address>
+				</div> -->
+				<div class="row">
+					<!-- <div class="col-md-3 col-md-offset-1"> -->
+					<div class="col-md-4">
+						<address>
+							<span>Location</span>
+							<p>
+								Houston, Texas
+							</p>
+						</address>
+					</div>
+					<div class="col-md-4">
+						<address>
+							<span style="text-align: center">Email</span>
+							<p style="text-align: center">alfie.g.santos@gmail.com</p>
+						</address>
+					</div>
+					<div class="col-md-4">
+						<address>
+							<span style="text-align: right">Phone</span>
+							<p style="text-align: right">(713) 416-9744</p>
+						</address>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -219,8 +300,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<p>Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-</p>
+					<!-- <p>Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+</p> -->
 				</div>
 				<div class="col-md-4">
 					<ul class="social-icons">
