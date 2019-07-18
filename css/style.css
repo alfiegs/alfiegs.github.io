@@ -167,15 +167,19 @@ a:focus{
 }
 
 #photo-of-me{
-	width: 10vw;
+	width: 175px;
 	border-radius: 50%;
 }
 
 .header-info{
 	position: relative;
-	top: 50%;
+	top: 60%;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: translateY(-30%);
+}
+
+.header-button{
+	width: 120px;
 }
 
 /***

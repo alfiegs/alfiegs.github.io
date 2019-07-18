@@ -26,7 +26,7 @@ $('.menu  a').on('click', function(e) {
 });
 
 
-//Calculate full with of jumbotron.
+// Calculate full with of jumbotron.
  function homeFullScreen() {
 
     var homeSection = $('.home');
@@ -34,7 +34,7 @@ $('.menu  a').on('click', function(e) {
 
     if (homeSection.hasClass('home-fullscreen')) {
 
-        $('.home-fullscreen').css('height', windowHeight);
+        $('.home-fullscreen').css('height', '90%');
     }
 }
 
