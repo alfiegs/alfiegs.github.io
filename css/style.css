@@ -175,7 +175,7 @@ a:focus{
 	position: relative;
 	top: 60%;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-30%);
+	transform: translateY(-10%);
 }
 
 .header-button{
@@ -282,6 +282,8 @@ PORTFOLIO
 	line-height: 50px;
 	font-size: 30px;
 }
+
+
 
 .portfolio-item:hover .mask{
 	opacity: 1;
