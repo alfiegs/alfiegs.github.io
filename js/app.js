@@ -90,24 +90,24 @@ $(window).resize(function () {
 
 
 
-//Set langitude and latidute for your location
-var lat = 40.729523;
-var lng = -73.978672;
-var myLangLat = new google.maps.LatLng(lat, lng);
+// //Set langitude and latidute for your location
+// var lat = 40.729523;
+// var lng = -73.978672;
+// var myLangLat = new google.maps.LatLng(lat, lng);
 
-google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY) {
-    var map = this;
-    var ov = new google.maps.OverlayView();
-    ov.onAdd = function() {
-        var proj = this.getProjection();
-        var aPoint = proj.fromLatLngToContainerPixel(latlng);
-        aPoint.x = aPoint.x+offsetX;
-        aPoint.y = aPoint.y+offsetY;
-        map.setCenter(proj.fromContainerPixelToLatLng(aPoint));
-    }; 
-    ov.draw = function() {}; 
-    ov.setMap(this); 
-};
+// google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY) {
+//     var map = this;
+//     var ov = new google.maps.OverlayView();
+//     ov.onAdd = function() {
+//         var proj = this.getProjection();
+//         var aPoint = proj.fromLatLngToContainerPixel(latlng);
+//         aPoint.x = aPoint.x+offsetX;
+//         aPoint.y = aPoint.y+offsetY;
+//         map.setCenter(proj.fromContainerPixelToLatLng(aPoint));
+//     }; 
+//     ov.draw = function() {}; 
+//     ov.setMap(this); 
+// };
 
 /*
  * This function initialize google map. More info on 
